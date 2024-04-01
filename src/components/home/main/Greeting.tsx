@@ -1,9 +1,9 @@
 import Image from "next/image";
-import mainImg from "../../../../public/images/sonya.jpg";
+import mainImg from "../../../../public/images/sonya_greeting.jpg";
 
 export default function Greeting() {
   return (
-    <section className="flex items-center justify-center min-h-[70vh]">
+    <section className="flex items-center justify-center min-h-[70vh] py-[10rem] px-10">
       <div className=" flex justify-center items-center">
         <Image
           src={mainImg}

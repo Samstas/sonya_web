@@ -1,11 +1,11 @@
 import Greeting from "@/components/home/main/Greeting";
-import Services from "@/components/home/main/Services";
+import ServicesList from "@/components/home/main/ServicesList";
 
 export default function Home() {
   return (
     <>
       <Greeting />
-      <Services />
+      <ServicesList />
     </>
   );
 }

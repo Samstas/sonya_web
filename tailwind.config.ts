@@ -35,7 +35,7 @@ const config: Config = {
         fontGreen: "#56503F",
       },
       backgroundImage: {
-        "hero-bg": "url('/images/test1.png')",
+        "hero-bg": "url('/images/home_hero.png')",
       },
     },
   },
