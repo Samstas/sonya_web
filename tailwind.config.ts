@@ -33,9 +33,11 @@ const config: Config = {
         fontBeigeSec: "#D6D3CA",
         fontDark: "#2E2D2D",
         fontGreen: "#56503F",
+        c_black: "#202020",
       },
       backgroundImage: {
-        "hero-bg": "url('/images/home_hero.png')",
+        "main-hero-bg": "url('/images/main/home_hero.jpg')",
+        "visual-hero-bg": "url('/images/visual/visual_hero.jpg')",
       },
     },
   },

@@ -1,10 +1,10 @@
-import ServiceLink from "./ServiceLink";
-import image1 from "../../../../public/images/services_img/visual.jpg";
-import image2 from "../../../../public/images/services_img/photographer.png";
-import image3 from "../../../../public/images/services_img/collaboration.jpg";
-import image4 from "../../../../public/images/services_img/presets.jpg";
-import image5 from "../../../../public/images/services_img/photo_class.jpg";
-import image6 from "../../../../public/images/services_img/plant.jpg";
+import image1 from "../../../../public/images/main/services_img/visual.jpg";
+import image2 from "../../../../public/images/main/services_img/photographer.jpg";
+import image3 from "../../../../public/images/main/services_img/collaboration.jpg";
+import image4 from "../../../../public/images/main/services_img/presets.jpg";
+import image5 from "../../../../public/images/main/services_img/photo_class.jpg";
+import image6 from "../../../../public/images/main/services_img/plant.jpg";
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 

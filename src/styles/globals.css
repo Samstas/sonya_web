@@ -34,3 +34,9 @@ body {
 .c_flex_between {
   @apply flex items-center justify-between;
 }
+
+/* hover  */
+
+.c_hover_link {
+  @apply transition hover:border-b 
+}

@@ -27,11 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={`${forum.variable}`}>
-      <body className="bg-mainBg text-[#202020]">
-        <Header />
-        <main className=" c_flex_center flex-col ">{children}</main>
-        <Footer />
-      </body>
+      <body className="bg-mainBg text-[#202020]">{children}</body>
     </html>
   );
 }

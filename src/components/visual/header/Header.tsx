@@ -1,20 +1,32 @@
 import Image from "next/image";
-import logo from "../../../../public/images/logo.svg";
+import logo from "../../../../public/images/logo2.svg";
+import Link from "next/link";
+
+const navLinks = [
+  { name: "главная", path: "/" },
+  { name: "визуал", path: "/visual" },
+];
 
 export default function Header() {
   return (
-    <header className="bg-hero-bg bg-cover bg-center bg-no-repeat h-screen ">
+    <header className="bg-visual-hero-bg bg-cover bg-center bg-no-repeat h-screen ">
       <nav className="c_main_container py-4 flex justify-between items-center">
+        {/* navigation links */}
         <ul className="flex text-2xl gap-4 text-white">
-          {/* <li>home</li> */}
-          <li>обо мне</li>
-          <li>услуги</li>
+          {navLinks.map(({ name, path }) => (
+            <li key={name}>
+              <Link href={path} className="c_hover_link">
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
+
       <div className="flex justify-center items-center flex-col  h-full">
         <Image src={logo} alt="logo" className="w-[30rem] mb-[-14rem]" />
         <h1 className="uppercase text-fontBeigeSec opacity-40  text-[14rem] ">
-          projects
+          visual
         </h1>
       </div>
     </header>

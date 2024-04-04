@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mainImg from "../../../../public/images/sonya_greeting.jpg";
+import mainImg from "../../../../public/images/main/sonya_greeting.jpg";
 
 export default function Greeting() {
   return (
