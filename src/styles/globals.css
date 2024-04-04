@@ -20,8 +20,17 @@ body {
   font-family: var(--font-forum);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Custom classes  */
+
+/* c_ - custom */
+.c_main_container {
+  @apply mx-auto min-w-[320px] max-w-[1180px];
+}
+
+/* выравнивание  */
+.c_flex_center {
+  @apply flex items-center justify-center;
+}
+.c_flex_between {
+  @apply flex items-center justify-between;
 }

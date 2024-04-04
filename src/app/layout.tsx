@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Forum } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import Header from "@/components/home/header/Header";
+import Footer from "@/components/home/footer/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -25,14 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${forum.variable}`}>
+    <html lang="ru" className={`${forum.variable}`}>
       <body className="bg-mainBg text-[#202020]">
         <Header />
-        <main className=" flex flex-col items-center justify-center">
-          {children}
-        </main>
-        <footer>footer</footer>
-        {/* <footer className="border border-blue-600">footer</footer> */}
+        <main className=" c_flex_center flex-col ">{children}</main>
+        <Footer />
       </body>
     </html>
   );

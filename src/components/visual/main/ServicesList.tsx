@@ -21,7 +21,7 @@ const services: ServiceType[] = [
   {
     id: 1,
     title: "Консультирую по концепции ведения блога и визуала.",
-    href: "/visual",
+    href: "#",
     imageSrc: image1,
   },
   {
@@ -76,9 +76,7 @@ export default function ServicesList() {
                   className="h-full w-full object-cover object-center brightness-[.9] contrast-[.9]"
                 />
 
-                <h3 className="mt-3 h-10 text-sm text-white">
-                  {product.title}
-                </h3>
+                <h3 className="mt-3 h-10 text-sm text-white">{product.title}</h3>
               </Link>
             </li>
           ))}
