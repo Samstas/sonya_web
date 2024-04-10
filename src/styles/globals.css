@@ -38,5 +38,16 @@ body {
 /* hover  */
 
 .c_hover_link {
-  @apply transition hover:border-b 
+  @apply transition hover:border-b;
+}
+
+/* Borders for testing  */
+.my_b_blue {
+  @apply border border-blue-700;
+}
+.my_b_red {
+  @apply border border-red-600;
+}
+.my_b_green {
+  @apply border border-green-600;
 }

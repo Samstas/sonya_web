@@ -7,7 +7,7 @@ const navLinks = [
   { name: "визуал", path: "/visual" },
 ];
 
-export default function Header() {
+export function Header() {
   return (
     <header className="bg-visual-hero-bg bg-cover bg-center bg-no-repeat h-screen ">
       <nav className="c_main_container py-4 flex justify-between items-center">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mainImg from "../../../../public/images/main/sonya_greeting.jpg";
 
-export default function Greeting() {
+export function Greeting() {
   return (
     <section className="c_flex_center min-h-[70vh] py-[10rem]  c_main_container">
       <div className="c_flex_center">

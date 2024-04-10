@@ -1,62 +1,10 @@
-import image1 from "../../../../public/images/main/services_img/visual.jpg";
-import image2 from "../../../../public/images/main/services_img/photographer.jpg";
-import image3 from "../../../../public/images/main/services_img/collaboration.jpg";
-import image4 from "../../../../public/images/main/services_img/presets.jpg";
-import image5 from "../../../../public/images/main/services_img/photo_class.jpg";
-import image6 from "../../../../public/images/main/services_img/plant.jpg";
+import { services } from "@/constants/global";
+import type { TService } from "@/types/global";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
-export type ServiceType = {
-  id: number;
-  title: string;
-  href: string;
-  imageSrc: StaticImageData;
-};
-
-type ServicesType = ServiceType[];
-
-const services: ServiceType[] = [
-  {
-    id: 1,
-    title: "Консультирую по концепции ведения блога и визуала.",
-    href: "/visual",
-    imageSrc: image1,
-  },
-  {
-    id: 2,
-    title: "Фотографирую.",
-    href: "#",
-    imageSrc: image2,
-  },
-  {
-    id: 3,
-    title: "/   СОТРУДНИЧАЮ  /",
-    href: "#",
-    imageSrc: image3,
-  },
-  {
-    id: 4,
-    title: "/ PRESETS /",
-    href: "#",
-    imageSrc: image4,
-  },
-  {
-    id: 5,
-    title: "Обучаю съемке.",
-    href: "#",
-    imageSrc: image5,
-  },
-  {
-    id: 6,
-    title: "Консультирую по растительному питанию.",
-    href: "#",
-    imageSrc: image6,
-  },
-];
-
-export default function ServicesList() {
+export function ServicesList() {
   return (
     <section className="bg-zinc-800 w-full h-full text-white py-10">
       <div className="c_main_container px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-10">
@@ -66,9 +14,10 @@ export default function ServicesList() {
           </h2>
           <p>Чем я могу быть полезна?</p>
         </div>
+
         <ul className="grid grid-cols-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8  items-center justify-items-center ">
-          {services.map((product) => (
-            <li key={product.id} className=" w-[80%]">
+          {services.map((product: TService) => (
+            <li key={product.id} className="w-[80%]">
               <Link href={product.href}>
                 <Image
                   src={product.imageSrc}

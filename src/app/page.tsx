@@ -1,9 +1,9 @@
-import Footer from "@/components/home/footer/Footer";
-import Header from "@/components/home/header/Header";
-import Greeting from "@/components/home/main/Greeting";
-import ServicesList from "@/components/home/main/ServicesList";
+import { Footer } from "@/components/home/footer/Footer";
+import { Header } from "@/components/home/header/Header";
+import { Greeting } from "@/components/home/main/Greeting";
+import { ServicesList } from "@/components/home/main/ServicesList";
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <Header />

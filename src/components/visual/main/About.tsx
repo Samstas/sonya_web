@@ -1,18 +1,18 @@
 import Image from "next/image";
 import mainImg from "../../../../public/images/visual/visual_collage.jpg";
 
-export default function AboutVisual() {
+export function AboutVisual() {
   return (
-    <section className="c_flex_center min-h-[70vh] py-[10rem]  c_main_container">
-      <div className="c_flex_center">
+    <section className="c_flex_between min-h-[70vh] pt-[10rem] w-full c_main_container">
+      <div className="c_flex_center size-[31.25rem]">
         <Image
           src={mainImg}
           alt="collage of visual"
-          className=" max-h-[540px] max-w-[430px]"
+          className="size-[31.25rem]"
         />
       </div>
-      <div className="max-w-[720px]  border-red-600 ml-20">
-        <p className="text-[1.2rem] text-justify">
+      <div className="max-w-[600px]  border-red-600 ml-14">
+        <p className="text-[1.1rem] text-justify">
           Я фотографирую чуть более 7-ми лет. За это время я научилась
           фотографировать и передавать видение мира так, что мои снимки многих
           оставляют не равнодушными.
