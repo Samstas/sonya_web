@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Forum } from "next/font/google";
+import { Forum, Lora } from "next/font/google";
 import "../styles/globals.css";
-import Header from "@/components/home/header/Header";
-import Footer from "@/components/home/footer/Footer";
+import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 
 // const inter = Inter({ subsets: ["latin"] });
 
-const forum = Forum({
+const forum: NextFontWithVariable = Forum({
   subsets: ["latin", "cyrillic"],
   variable: "--font-forum",
   weight: "400",
+});
+
+const lora: NextFontWithVariable = Lora({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-lora",
 });
 
 export const metadata: Metadata = {
@@ -26,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={`${forum.variable}`}>
-      <body className="bg-mainBg min-h-screen flex flex-col text-[#202020]">
+    <html lang="ru" className={`${forum.variable} ${lora.variable} font-serif`}>
+      <body className="flex min-h-screen flex-col bg-mainBg text-[#202020]">
         {children}
       </body>
     </html>

@@ -39,6 +39,9 @@ const config: Config = {
         "main-hero-bg": "url('/images/main/home_hero.jpg')",
         "visual-hero-bg": "url('/images/visual/visual_hero.jpg')",
       },
+      fontFamily: {
+        serif: ["var(--font-lora)"],
+      },
     },
   },
   plugins: [],
