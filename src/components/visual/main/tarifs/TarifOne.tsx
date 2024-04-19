@@ -1,3 +1,6 @@
+import { ModalWindow } from "@/components/ModalWindow";
+import FormTarif from "../../FormTarif";
+
 export function TarifOne() {
   return (
     <li className="border-b-2 border-black">
@@ -64,6 +67,9 @@ export function TarifOne() {
           </div>
         </div>
       </div>
+      {/* <ModalWindow >
+        <FormTarif />
+      </ModalWindow> */}
     </li>
   );
 }

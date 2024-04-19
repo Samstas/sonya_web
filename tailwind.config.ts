@@ -28,12 +28,13 @@ const config: Config = {
     extend: {
       colors: {
         mainBg: "#E8E8E8",
-        fieldColor: "#2E2D2D",
         fontBeigeOne: "#E8E8E8",
         fontBeigeSec: "#D6D3CA",
         fontDark: "#2E2D2D",
         fontGreen: "#56503F",
         c_black: "#202020",
+        c_black2: "#2e2d2d",
+        c_red: "#802a2a",
       },
       backgroundImage: {
         "main-hero-bg": "url('/images/main/home_hero.jpg')",

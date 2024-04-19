@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Forum, Lora } from "next/font/google";
 import "../styles/globals.css";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
+import { ModalWindowProvider } from "@/contexts/ModalWindowContext";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${forum.variable} ${lora.variable} font-serif`}>
       <body className="flex min-h-screen flex-col bg-mainBg text-[#202020]">
-        {children}
+        <ModalWindowProvider>{children}</ModalWindowProvider>
       </body>
     </html>
   );
